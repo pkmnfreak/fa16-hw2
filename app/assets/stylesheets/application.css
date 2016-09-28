@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+#Location {
+  background-color: green;
+  color: white;
+}
+
+#Fun {
+  color: red;
+  font-weight: bold;
+}
+
+#Ruby {
+  text-decoration: underline;
+  color: blue;
+}

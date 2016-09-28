@@ -8,21 +8,29 @@ class Person
 
   def nickname
     # YOUR IMPLEMENTATION HERE
-    'nickname'
+    'Your nickname is ' + @name[0,4]
   end
 
   def birth_year
     # YOUR IMPLEMENTATION HERE
-    1990
+    birth = 2016 - Integer(@age)
+    'You were born in ' + String(birth)
   end
 
   def introduction
     # YOUR IMPLEMENTATION HERE
-    'introduce'
+    'Hello! Your name is ' + @name + ' and you are ' + @age + ' years old.'
   end
 
   def fib_number
     # YOUR IMPLMENTATION HERE
-    0
+    x = 0
+    y = 1
+    counter = 0
+    while counter <= Integer(@age)
+      x, y = x + y, x
+      counter += 1
+    end
+    'Your fibonacci number is ' + String(x)
   end
 end
